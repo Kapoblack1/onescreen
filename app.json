@@ -1,0 +1,15 @@
+{
+  "expo": {
+    "name": "firebaseExpo",
+    "slug": "firebaseExpo",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "5e70b837-13fa-4c29-b737-d1f90a062073"
+      }
+    }
+  }
+}
