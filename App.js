@@ -12,6 +12,8 @@ import MusicPage from './app/screems/MusicPage';
 import ArtistPage from './app/screems/ArtistPage';
 import PlaylistPage from './app/screems/PlaylistPage';
 import Categoria from './app/screems/Categoria';
+import VideoPage from './app/screems/VideoPage';
+import Channel from './app/screems/Channel';
 
 const Stack = createStackNavigator();
 
@@ -41,12 +43,18 @@ const App = () => {
           component={Register}
           options={{ headerShown: false }} />
 
+        <Stack.Screen name="Channel"
+          component={Channel}
+          options={{ headerShown: false }} />
         <Stack.Screen name="Home"
           component={Home}
           options={{ headerShown: false }} />
 
         <Stack.Screen name="Songs"
           component={Songs}
+          options={{ headerShown: false }} />
+          <Stack.Screen name="VideoPage"
+          component={VideoPage}
           options={{ headerShown: false }} />
 
         <Stack.Screen name="MusicPage"
@@ -61,6 +69,8 @@ const App = () => {
           component={Categoria}
           options={{ headerShown: false }} />
       </Stack.Navigator>
+
+
     </NavigationContainer>
   );
 };

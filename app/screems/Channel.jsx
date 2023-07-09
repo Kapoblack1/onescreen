@@ -7,7 +7,7 @@ import { useNavigation } from '@react-navigation/native';
 
 
 
-const Categoria = ({ route }) => {
+const Channel = ({ route }) => {
   const { title, personId } = route.params;
   const [categoryItems, setCategoryItems] = useState([]);
   const [personName, setPersonName] = useState('');
@@ -65,7 +65,7 @@ const Categoria = ({ route }) => {
 }
 const handleItemPress = (itemTitle) => {
   const registeredPersonId = personId;
-  navigation.navigate('Channel', { title: itemTitle, personId: registeredPersonId });
+  navigation.navigate('VideoPage', { title: itemTitle, personId: registeredPersonId });
 };
 
   return (
@@ -177,4 +177,4 @@ sectionTitle: {
 },
 });
 
-export default Categoria;
+export default Channel;
